@@ -1,0 +1,64 @@
+Mariusz Magnuszewski
+
+Ranked attributes:
+ 0.1825  13 Ust. przeciwnika (1-6)
+ 0.1632  12 Ustawienie (1-6)
+ 0.14     5 Jakość przyjęcia/obrony
+ 0.1081   2 Strefa przyjęcia/obrony
+ 0.097    9 Faza seta
+ 0.0915   3 Strefa rozegrania
+ 0.0881   4 Ruchy rozgrywającego
+ 0.0781   7 Który atak w akcji
+ 0.0761  10 Numer seta
+ 0.0563   8 Która próba przejścia
+ 0.0554   6 Kierunek poprzedniej wystawy
+
+Selected attributes: 13,12,5,2,9,3,4,7,10,8,6 : 11
+
+
+Jakub Nowosielski
+
+Ranked attributes:
+ 0.1563  12 Ustawienie (1-6)
+ 0.1288   9 Faza seta
+ 0.1278  13 Ust. przeciwnika (1-6)
+ 0.1113   3 Strefa rozegrania
+ 0.1011   6 Kierunek poprzedniej wystawy
+ 0.0919   5 Jakość przyjęcia/obrony
+ 0.0915   4 Ruchy rozgrywającego
+ 0.062    2 Strefa przyjęcia/obrony
+ 0.0557  10 Numer seta
+
+Selected attributes: 12,9,13,3,6,5,4,2,10 : 9
+
+Jakub Durski
+
+Ranked attributes:
+ 0.1603   4 Ruchy rozgrywającego
+ 0.1103   9 Faza seta
+ 0.0944   2 Strefa przyjęcia/obrony
+ 0.0937   3 Strefa rozegrania
+ 0.0928  12 Ustawienie (1-6)
+ 0.0896   5 Jakość przyjęcia/obrony
+ 0.0805  13 Ust. przeciwnika (1-6)
+ 0.0582  11 Czas meczu
+
+Selected attributes: 4,9,2,3,12,5,13,11 : 8
+
+Bartłomiej Neroj
+
+Ranked attributes:
+ 0.1983   4 Ruchy rozgrywającego
+ 0.1476   5 Jakość przyjęcia/obrony
+ 0.1439  13 Ust. przeciwnika (1-6)
+ 0.1268   9 Faza seta
+ 0.1228   2 Strefa przyjęcia/obrony
+ 0.0965   3 Strefa rozegrania
+ 0.0959  12 Ustawienie (1-6)
+ 0.0914   6 Kierunek poprzedniej wystawy
+ 0.0856  10 Numer seta
+ 0.0664  11 Czas meczu
+ 0.06     7 Który atak w akcji
+ 0.0581   8 Która próba przejścia
+
+Selected attributes: 4,5,13,9,2,3,12,6,10,11,7,8 : 12

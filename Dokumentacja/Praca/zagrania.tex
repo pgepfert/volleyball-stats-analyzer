@@ -1,0 +1,37 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{filecontents}
+
+\begin{filecontents}{\jobname.dat}
+liczba   zagrywka     num
+28304    atak         6 
+25426    rozegranie   5 
+25178    zagrywka     4 
+20753    przyjęcie    3 
+11541    obrona       2 
+11330    blok         1 
+ 2100    dogranie     0 
+\end{filecontents}
+
+\begin{document}
+\begin{tikzpicture}
+
+
+\begin{axis}[%ymin=0, 
+             xlabel = {liczba zagrań},
+             ytick=data,  
+             xbar,
+             nodes near coords,
+             nodes near coords align={vertical},
+             yticklabels from table={\jobname.dat}{zagrywka},
+            ]
+\addplot table [x=liczba, y=num]     {\jobname.dat};
+  
+\end{axis}
+\end{tikzpicture}
+\end{document}
+
+ 

@@ -1,0 +1,16 @@
+Ranked attributes:
+ 0.164    5 Jakość przyjęcia/obrony
+ 0.1256   4 Ruchy rozgrywającego
+ 0.0873  12 Ustawienie (1-6)
+ 0.0604  13 Ust. przeciwnika (1-6)
+ 0.0588   2 Strefa przyjęcia/obrony
+
+Ranked attributes:
+ 0.2825   3 Strefa rozegrania
+ 0.121    4 Ruchy rozgrywającego
+ 0.0925   5 Jakość przyjęcia/obrony
+ 0.0909  12 Ustawienie (1-6)
+ 0.0632   9 Faza seta
+ 0.0527   7 Który atak w akcji
+ 0.0521  10 Numer seta
+ 0.0509  13 Ust. przeciwnika (1-6)

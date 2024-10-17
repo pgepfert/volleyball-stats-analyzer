@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="220.0"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="controller.PredictionOptionsController">
+    <Label fx:id="selectPredictLabel" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="195.0" style="&#10;"
+           AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="10.0"
+           AnchorPane.topAnchor="14.0">
+        <font>
+            <Font size="18.0" fx:id="x1"/>
+        </font>
+    </Label>
+    <RadioButton fx:id="setRadioButton" disable="true" layoutX="13.0" layoutY="41.0" mnemonicParsing="false">
+        <toggleGroup>
+            <ToggleGroup fx:id="whatTypeGroup"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="attackRadioButton" disable="true" layoutX="13.0" layoutY="59.0" mnemonicParsing="false"
+                 toggleGroup="$whatTypeGroup"/>
+    <RadioButton fx:id="receiveRadioButton" disable="true" layoutX="13.0" layoutY="77.0" mnemonicParsing="false"
+                 toggleGroup="$whatTypeGroup"/>
+    <Label fx:id="whatKindLabel" font="$x1" layoutX="14.0" layoutY="212.0" prefHeight="27.0" prefWidth="195.0"
+           style="&#10;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="10.0"
+           AnchorPane.topAnchor="212.0"/>
+    <Label fx:id="resultClassLabel" font="$x1" layoutX="9.0" layoutY="111.0" prefHeight="27.0" prefWidth="195.0"
+           style="&#10;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="15.0"
+           AnchorPane.topAnchor="111.0"/>
+    <RadioButton fx:id="result1RadioButton" disable="true" layoutX="13.0" layoutY="138.0" mnemonicParsing="false">
+        <toggleGroup>
+            <ToggleGroup fx:id="resultClassGroup"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="result2RadioButton" disable="true" layoutX="13.0" layoutY="156.0" mnemonicParsing="false"
+                 toggleGroup="$resultClassGroup"/>
+    <RadioButton fx:id="result3RadioButton" disable="true" layoutX="13.0" layoutY="174.0" mnemonicParsing="false"
+                 toggleGroup="$resultClassGroup"/>
+    <RadioButton fx:id="kindRadio1" disable="true" layoutX="13.0" layoutY="239.0" mnemonicParsing="false">
+        <toggleGroup>
+            <ToggleGroup fx:id="whatKindGroup"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="kindRadio2" disable="true" layoutX="13.0" layoutY="257.0" mnemonicParsing="false"
+                 toggleGroup="$whatKindGroup"/>
+    <RadioButton fx:id="kindRadio3" disable="true" layoutX="13.0" layoutY="275.0" mnemonicParsing="false"
+                 toggleGroup="$whatKindGroup"/>
+    <CheckBox fx:id="checkBox1" disable="true" layoutX="12.0" layoutY="304.0" mnemonicParsing="false" prefHeight="18.0"
+              AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="72.0"/>
+    <ChoiceBox fx:id="choiceBox1" disable="true" layoutX="160.0" layoutY="299.0" prefHeight="26.0"
+               AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="8.0"/>
+    <CheckBox fx:id="checkBox2" disable="true" layoutX="12.0" layoutY="337.0" mnemonicParsing="false" prefHeight="18.0"
+              AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="72.0"/>
+    <ChoiceBox fx:id="choiceBox2" disable="true" layoutX="160.0" layoutY="332.0" prefHeight="26.0"
+               AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="8.0"/>
+</AnchorPane>

@@ -1,0 +1,14 @@
+Ranked attributes:
+ 0.1162   5 Jakość przyjęcia/obrony
+ 0.1156   3 Strefa rozegrania
+ 0.1102  12 Ustawienie (1-6)
+ 0.0947  13 Ust. przeciwnika (1-6)
+ 0.0576  10 Numer seta
+ 0.0569  11 Czas meczu
+
+Ranked attributes:
+ 0.1975   4 Ruchy rozgrywającego
+ 0.1345  12 Ustawienie (1-6)
+ 0.1256   3 Strefa rozegrania
+ 0.1094   5 Jakość przyjęcia/obrony
+ 0.0561  13 Ust. przeciwnika (1-6)

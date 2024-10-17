@@ -1,0 +1,12 @@
+Ranked attributes:
+ 0.0886   5 Jakość przyjęcia/obrony
+ 0.0833  13 Ust. przeciwnika (1-6)
+ 0.0779  12 Ustawienie (1-6)
+ 0.0576   4 Ruchy rozgrywającego
+
+Ranked attributes:
+ 0.1134   3 Strefa rozegrania
+ 0.0663   4 Ruchy rozgrywającego
+ 0.0632  12 Ustawienie (1-6)
+ 0.0573   5 Jakość przyjęcia/obrony
+ 0.0537  13 Ust. przeciwnika (1-6)

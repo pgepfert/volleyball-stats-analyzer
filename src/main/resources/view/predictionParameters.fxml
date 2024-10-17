@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckListView?>
+<AnchorPane prefHeight="400.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PredictionParametersController">
+
+    <Label fx:id="selectParametersLabel" layoutX="7.0" layoutY="14.0" prefHeight="27.0" prefWidth="204.0" style="&#10;" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0">
+        <font>
+            <Font size="18.0" fx:id="x1" />
+        </font>
+    </Label>
+    <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="264.0" prefWidth="214.0" AnchorPane.bottomAnchor="136.39999999999998" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="60.0">
+        <CheckListView fx:id="parametersListView" prefWidth="213.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </CheckListView>
+    </ScrollPane>
+    <Slider fx:id="supportSlider" blockIncrement="1.0" layoutX="10.0" layoutY="340.0" majorTickUnit="5.0" max="25.0" min="5.0" minorTickCount="4" prefHeight="26.0" prefWidth="198.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="15.0" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+    <Label fx:id="supportValueLabel" alignment="CENTER" layoutX="155.0" layoutY="320.0" prefHeight="20.0" prefWidth="30.0" text="support: 15" AnchorPane.bottomAnchor="110.4" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Slider fx:id="confidenceSlider" blockIncrement="1.0" layoutX="10.0" layoutY="408.0" majorTickUnit="10.0" max="99.0" min="50.0" minorTickCount="2" prefHeight="14.0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" value="75.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+    <Label fx:id="confidenceValueLabel" alignment="CENTER" layoutX="155.0" layoutY="388.0" prefHeight="20.0" prefWidth="50.0" text="confidence: 75%" AnchorPane.bottomAnchor="42.4" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+   <CheckBox fx:id="autoSelectCheckBox" layoutX="11.0" layoutY="41.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="146.0" AnchorPane.leftAnchor="12.5" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="40.0">
+      <font>
+         <Font size="11.0" />
+      </font></CheckBox>
+</AnchorPane>

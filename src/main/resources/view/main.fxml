@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="900.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="controller.MainController">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" fx:id="databaseMenu">
+            <MenuItem mnemonicParsing="false" fx:id="readNewGamesMenu" onAction="#readFiles"/>
+            <MenuItem mnemonicParsing="false" fx:id="removeGamesMenu" onAction="#removeGames"/>
+            <MenuItem mnemonicParsing="false" fx:id="selectGamesMenu" onAction="#selectGames"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem mnemonicParsing="false" fx:id="openDatabaseMenu" onAction="#selectDatabase"/>
+            <MenuItem mnemonicParsing="false" fx:id="createDatabaseMenu" onAction="#createNewDatabase"/>
+        </Menu>
+        <Menu mnemonicParsing="false" fx:id="settingsMenu">
+            <MenuItem mnemonicParsing="false" fx:id="selectLanguageMenu" onAction="#selectLanguage"/>
+        </Menu>
+        <Menu mnemonicParsing="false" fx:id="helpMenu">
+            <MenuItem mnemonicParsing="false" text="About Volleyball Stats Analyzer" onAction="#showAboutInfo"/>
+        </Menu>
+    </MenuBar>
+    <SplitPane dividerPositions="0.22, 0.5" focusTraversable="true" VBox.vgrow="ALWAYS">
+        <AnchorPane prefHeight="552.0" prefWidth="200.0">
+            <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="50.0" prefHeight="502.0"
+                        AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0"
+                        AnchorPane.topAnchor="50.0">
+                <ListView fx:id="teamsListView">
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </ListView>
+            </ScrollPane>
+            <Label fx:id="selectTeamLabel" layoutX="6.0" layoutY="14.0" minWidth="60.0" prefHeight="27.0"
+                   prefWidth="160.0" style="&#10;" AnchorPane.leftAnchor="8.0"
+                   AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="14.0">
+                <font>
+                    <Font size="18.0" fx:id="x1"/>
+                </font>
+            </Label>
+        </AnchorPane>
+        <AnchorPane prefHeight="552.0" prefWidth="200.0">
+            <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="50.0" prefHeight="502.0"
+                        AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0"
+                        AnchorPane.topAnchor="50.0">
+                <ListView fx:id="playersListView">
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </ListView>
+            </ScrollPane>
+            <Label fx:id="selectPlayerLabel" layoutX="6.0" layoutY="14.0" minWidth="60.0" prefHeight="27.0"
+                   prefWidth="251.0" style="&#10;" textAlignment="CENTER"
+                   AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="14.0">
+                <font>
+                    <Font size="18.0" fx:id="x12"/>
+                </font>
+            </Label>
+        </AnchorPane>
+        <SplitPane dividerPositions="0.82" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+            <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0">
+                <fx:include fx:id="predictionOptions" source="predictionOptions.fxml"/>
+                <fx:include fx:id="predictionParameters" source="predictionParameters.fxml"/>
+            </SplitPane>
+            <GridPane fx:id="buttonsPane">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="200.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="200.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                    <RowConstraints minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <Button fx:id="treeButton" disable="true" mnemonicParsing="false" onAction="#showTree"
+                            textAlignment="CENTER" wrapText="true"
+                            AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0"
+                            AnchorPane.topAnchor="3.0">
+                        <font>
+                            <Font name="System Bold" size="12.0"/>
+                        </font>
+                    </Button>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <Button fx:id="rulesButton" disable="true" mnemonicParsing="false" onAction="#showRules"
+                            textAlignment="CENTER" wrapText="true"
+                            AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0"
+                            AnchorPane.topAnchor="3.0">
+                        <font>
+                            <Font name="System Bold" size="12.0"/>
+                        </font>
+                    </Button>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <Button fx:id="dataButton" disable="true" mnemonicParsing="false" onAction="#showData"
+                            textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="3.0"
+                            AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                        <font>
+                            <Font name="System Bold" size="12.0"/>
+                        </font>
+                    </Button>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <Button fx:id="csvButton" disable="true" mnemonicParsing="false" onAction="#generateCSV"
+                            textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="3.0"
+                            AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                        <font>
+                            <Font name="System Bold" size="12.0"/>
+                        </font>
+                    </Button>
+                </AnchorPane>
+            </GridPane>
+        </SplitPane>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+        <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+        </padding>
+        <Label fx:id="leftStatus" prefWidth="230.0" HBox.hgrow="ALWAYS">
+            <font>
+                <Font size="11.0" fx:id="x3"/>
+            </font>
+            <textFill>
+                <Color blue="0.625" green="0.625" red="0.625" fx:id="x4"/>
+            </textFill>
+        </Label>
+        <AnchorPane prefWidth="700.0" HBox.hgrow="ALWAYS">
+            <ProgressBar fx:id="progressBar" layoutX="-2.0" layoutY="-1.0" progress="0.0"
+                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0"
+                         AnchorPane.topAnchor="0.0"/>
+        </AnchorPane>
+        <Label fx:id="rightStatus" font="$x3" prefWidth="50.0" textFill="$x4" HBox.hgrow="NEVER"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckListView?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="700.0"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="controller.SelectGamesController">
+
+    <Label fx:id="selectGamesLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="14.0"
+           prefHeight="27.0" prefWidth="204.0" style="&#10;" text="Select parameters:" textAlignment="CENTER"
+           AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="8.0">
+        <font>
+            <Font size="18.0" fx:id="x1"/>
+        </font>
+    </Label>
+    <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="264.0" prefWidth="214.0" AnchorPane.bottomAnchor="60.0"
+                AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="90.0">
+        <CheckListView fx:id="gamesListView" prefWidth="213.0">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </CheckListView>
+    </ScrollPane>
+    <CheckBox fx:id="selectGamesCheckBox" contentDisplay="CENTER" layoutX="25.0" layoutY="53.0" mnemonicParsing="false"
+              textAlignment="RIGHT" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="12.0"
+              AnchorPane.rightAnchor="555.0" AnchorPane.topAnchor="69.0"/>
+    <ChoiceBox fx:id="teamsChoiceBox" layoutX="136.0" layoutY="48.0" prefWidth="150.0" AnchorPane.bottomAnchor="629.0"
+               AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="40.0"/>
+    <Button fx:id="confirmButton" onAction="#endSelection" layoutX="218.0" layoutY="655.0" mnemonicParsing="false"
+            text="Button" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="170.0"
+            AnchorPane.topAnchor="650.0"/>
+</AnchorPane>

@@ -1,0 +1,13 @@
+CREATE TABLE "Game" (
+	"id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"date"	TEXT,
+	"season"	TEXT,
+	"category"	TEXT,
+	"subcategory"	TEXT,
+	"hTeamID"	INTEGER NOT NULL,
+	"vTeamID"	INTEGER NOT NULL,
+	"result"	TEXT NOT NULL,
+	"winner"	INTEGER NOT NULL,
+	FOREIGN KEY("hTeamID") REFERENCES "Team"("id") ON DELETE CASCADE,
+	FOREIGN KEY("vTeamID") REFERENCES "Team"("id") ON DELETE CASCADE
+)
